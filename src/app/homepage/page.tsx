@@ -5,8 +5,8 @@ import { css } from "../../../styled-system/css"
 const Homepage = () => {
   return (
     <div className={css({
-     border:"1px solid #000",
-     h: "100%",
+     display: "flex",
+     h: "100vh",
      w: "100%"
     })} >
       <Sidebar /> 
