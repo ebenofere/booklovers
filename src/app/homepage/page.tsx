@@ -7,7 +7,7 @@ const Homepage = () => {
     <div className={css({
      display: "flex",
      h: "100vh",
-     w: "100%"
+     w: "100%", 
     })} >
       <Sidebar /> 
       <Mainpage />

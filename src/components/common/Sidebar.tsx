@@ -9,38 +9,45 @@ const Sidebar = () => {
     <div
         className={css({
             bgColor:"#EEEAE1",
-            p: "2.5rem",
+            py: "2.5rem",
+            px: "1.5rem",
             display:"flex",
             flexDir:"column",
             justifyContent:"space-between",
         })}
     >
-        <Box>
+        <Box ml={"4"}>
             <Box mb={"12"}>
                 <Image
                 src="/img/logo-dark.png"
-                width={200}
-                height={200}
+                width={150}
+                height={150}
                 alt="BookLover logo"
                 />
             </Box>
-            <VStack alignItems={"left"} mb={"3rem"} >
+            <VStack alignItems={"left"} justifyContent={"space-between"} mb={"3rem"} fontWeight={"500"} color={"#4B4B4D"} h={"20rem"}>
                 <Box>Library</Box>
                 <Box>Add Items</Box>
-                <Box>Add Collsection</Box>
+                <Box>Add Collection</Box>
                 <Box>Publish</Box>
-                <Box>Dashboards</Box>
-            </VStack>
-            <VStack alignItems={"left"} mb={"3rem"}>
+                <Box mb={"8"}>Dashboards</Box>
+            
                 <Box>Settings</Box>
                 <Box>Support</Box>
                 <Box>Logout</Box>
             </VStack>
         </Box>
         <Box>
-            <Button css={({bgColor:"#4BC1D2", color: "#FEFEFE", fontWeight:"bold", px: "4em", py:"0.5em", mb:"8", borderRadius:"8px"})}>Upgrade</Button>
-            <HStack justifyContent={"space-between"}>
-                <FaInstagram size={"1.5em"} />
+            <Button css={({
+                bgColor:"#4BC1D2", 
+                color: "#FEFEFE", 
+                fontWeight:"bold", 
+                px: "4em", 
+                py:"0.5em", 
+                mb:"8", 
+                borderRadius:"8px"})}>Upgrade</Button>
+            <HStack justifyContent={"space-between"} color={"#4B4B4D"}>
+                <FaInstagram size={"1.5em"} color={"#4B4B4D"}/>
                 <FaTwitter size={"1.5em"} />
                 <FaTiktok size={"1.5em"} />
                 <FaYoutube size={"1.5em"} />
