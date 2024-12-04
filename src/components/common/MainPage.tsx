@@ -1,5 +1,5 @@
 import { IoSearch } from "react-icons/io5";
-import { Box, VStack, HStack } from "../../../styled-system/jsx";
+import { VStack, HStack } from "../../../styled-system/jsx";
 import { Input } from "@/primitives/Input";
 import { Text } from "@/primitives/Text";
 import Image from "next/image";
