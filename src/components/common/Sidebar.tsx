@@ -12,11 +12,11 @@ const Sidebar = () => {
             p: "2.5rem",
             display:"flex",
             flexDir:"column",
-            justifyContent:"space-between"
+            justifyContent:"space-between",
         })}
     >
         <Box>
-            <Box mb={"8"}>
+            <Box mb={"12"}>
                 <Image
                 src="/img/logo-dark.png"
                 width={200}
@@ -27,7 +27,7 @@ const Sidebar = () => {
             <VStack alignItems={"left"} mb={"3rem"} >
                 <Box>Library</Box>
                 <Box>Add Items</Box>
-                <Box>Add Collection</Box>
+                <Box>Add Collsection</Box>
                 <Box>Publish</Box>
                 <Box>Dashboards</Box>
             </VStack>
@@ -36,17 +36,16 @@ const Sidebar = () => {
                 <Box>Support</Box>
                 <Box>Logout</Box>
             </VStack>
-            <Box mb={"2rem"}>
-                <Button css={({bgColor:"#4BC1D2", color: "#FEFEFE", fontWeight:"bold", px: "4em", py:"0.5em", borderRadius:"8px"})}>Upgrade</Button>
-            </Box>
         </Box>
-        <HStack justifyContent={"space-between"}>
-            <FaInstagram size={"1.5em"} />
-            <FaTwitter size={"1.5em"} />
-            <FaTiktok size={"1.5em"} />
-            <FaYoutube size={"1.5em"} />
-        </HStack>
-            
+        <Box>
+            <Button css={({bgColor:"#4BC1D2", color: "#FEFEFE", fontWeight:"bold", px: "4em", py:"0.5em", mb:"8", borderRadius:"8px"})}>Upgrade</Button>
+            <HStack justifyContent={"space-between"}>
+                <FaInstagram size={"1.5em"} />
+                <FaTwitter size={"1.5em"} />
+                <FaTiktok size={"1.5em"} />
+                <FaYoutube size={"1.5em"} />
+            </HStack>
+        </Box>
     </div>
   )
 }
